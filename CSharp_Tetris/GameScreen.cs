@@ -13,9 +13,27 @@ namespace CSharp_Tetris
 
     class GameScreen
     {
-        private List<List<string>> BlockList = new List<List<string>>();
+        // 스크린 틀 자체를 렌더할 정보를 저장.
+        // 자식도 사용 가능하게 설정한다.
+        protected List<List<string>> BlockList = new List<List<string>>();
 
-        public GameScreen(int _x, int _y)
+        public int X
+        {
+            get
+            {
+                return BlockList[0].Count;
+            }
+        }
+
+        public int Y
+        {
+            get
+            {
+                return BlockList.Count;
+            }
+        }
+
+        public GameScreen(int _x, int _y, bool TopAndBotLine)
         {
             if(_x < 0 ||  _y < 0)
             {
@@ -32,6 +50,12 @@ namespace CSharp_Tetris
                 }
             }
 
+            // 위 아래 라인이 아니라면 그릴 것 없다.
+            if(TopAndBotLine == false)
+            {
+                return;
+            }
+
             // 맨 위와 맨 아래는 벽으로 막아준다.
             for (int i = 0; i < BlockList[0].Count; i++)
             {
@@ -44,6 +68,11 @@ namespace CSharp_Tetris
             }
         }
 
+        public bool IsBlock(int _y, int _x, string _eBlockType)
+        {
+            return BlockList[_y][_x] == _eBlockType;
+        }
+
         // 블록 타입을 바꿀 수 있다.
         public void SetBlock(int _y, int _x, string _eBlockType)
         {
@@ -51,7 +80,7 @@ namespace CSharp_Tetris
         }
 
         // 게임 창을 렌더링합니다.
-        public void Render()
+        public virtual void Render()
         {
             for (int y = 0; y < BlockList.Count; y++)
             {

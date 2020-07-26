@@ -26,10 +26,10 @@ namespace CSharp_Tetris
                 }
             }
 
-            #region S
-            // Stick 모양입니다.
-            // Stick타입 블록의 TOP
-            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
+            #region I
+            // I 모양입니다.
+            // I타입 블록의 TOP
+            AllBlock[(int)BLOCKTYPE.BT_I][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
             {
                 new string[]{ "■", "□", "□", "□" },
                 new string[]{ "■", "□", "□", "□" },
@@ -37,8 +37,8 @@ namespace CSharp_Tetris
                 new string[]{ "■", "□", "□", "□" }
             };
 
-            // Stick타입 블록의 RIGHT
-            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
+            // I타입 블록의 RIGHT
+            AllBlock[(int)BLOCKTYPE.BT_I][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
             {
                 new string[]{ "■", "■", "■", "■" },
                 new string[]{ "□", "□", "□", "□" },
@@ -46,8 +46,8 @@ namespace CSharp_Tetris
                 new string[]{ "□", "□", "□", "□" }
             };
 
-            // Stick타입 블록의 BOTTOM
-            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
+            // I타입 블록의 BOTTOM
+            AllBlock[(int)BLOCKTYPE.BT_I][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
             {
                 new string[]{ "■", "□", "□", "□" },
                 new string[]{ "■", "□", "□", "□" },
@@ -55,8 +55,8 @@ namespace CSharp_Tetris
                 new string[]{ "■", "□", "□", "□" }
             };
 
-            // Stick타입 블록의 LEFT
-            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
+            // I타입 블록의 LEFT
+            AllBlock[(int)BLOCKTYPE.BT_I][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
             {
                 new string[]{ "■", "■", "■", "■" },
                 new string[]{ "□", "□", "□", "□" },
@@ -64,6 +64,7 @@ namespace CSharp_Tetris
                 new string[]{ "□", "□", "□", "□" }
             };
             #endregion
+
             #region T
             // T 모양입니다.
             // I타입 블록의 TOP
@@ -99,6 +100,201 @@ namespace CSharp_Tetris
                 new string[]{ "□", "■", "□", "□" },
                 new string[]{ "■", "■", "□", "□" },
                 new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+            #endregion
+
+            #region S
+            // S 모양입니다.
+            // S타입 블록의 TOP
+            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
+            {
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // S타입 블록의 RIGHT
+            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
+            {
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // S타입 블록의 BOTTOM
+            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
+            {
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // S타입 블록의 LEFT
+            AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
+            {
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+            #endregion
+
+            #region Z
+            // Z 모양입니다.
+            // Z타입 블록의 TOP
+            AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // Z타입 블록의 RIGHT
+            AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
+            {
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // Z타입 블록의 BOTTOM
+            AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // Z타입 블록의 LEFT
+            AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
+            {
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+            #endregion
+
+            #region L
+            // L 모양입니다.
+            // L타입 블록의 TOP
+            AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
+            {
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // L타입 블록의 RIGHT
+            AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
+            {
+                new string[]{ "■", "■", "■", "□" },
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // L타입 블록의 BOTTOM
+            AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // L타입 블록의 LEFT
+            AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
+            {
+                new string[]{ "□", "□", "■", "□" },
+                new string[]{ "■", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+            #endregion
+
+            #region J
+            // J 모양입니다.
+            // J타입 블록의 TOP
+            AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
+            {
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // J타입 블록의 RIGHT
+            AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
+            {
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "■", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // J타입 블록의 BOTTOM
+            AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "■", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // J타입 블록의 LEFT
+            AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
+            {
+                new string[]{ "■", "■", "■", "□" },
+                new string[]{ "□", "□", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+            #endregion
+
+            #region O
+            // O 모양입니다.
+            // O타입 블록의 TOP
+            AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCK_DIRECTION.BD_TOP] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // O타입 블록의 RIGHT
+            AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCK_DIRECTION.BD_RIGHT] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // O타입 블록의 BOTTOM
+            AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCK_DIRECTION.BD_BOTTOM] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" }
+            };
+
+            // O타입 블록의 LEFT
+            AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCK_DIRECTION.BD_LEFT] = new string[][]
+            {
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" }
             };
             #endregion
